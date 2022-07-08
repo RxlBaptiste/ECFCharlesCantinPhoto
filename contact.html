@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav class="navBar">
+      <div class="menu">
+        <div id="page1">
+          <a href="index.html">Page 1</a>
+        </div>
+        <div id="page2">
+          <a href="galerie.html">Page 2</a>
+        </div>
+        <div id="page3">
+          <a href="tarif.html">Page 3</a>
+        </div>
+        <div id="page4">
+          <a href="contact.html">Page 4</a>
+        </div>
+      </div>
+      <div>
+        <img width="100px" height="100px" src="Images/LogoInstagram.jpg" />
+        <img width="100px" height="100px" src="Images/LogoIntagramON.png" />
+        <img src="Images/LogoFacebook.png" />
+        <img src="Images/LogoFacebookON.png" />
+      </div>
+    </nav>
+    <section>
+      <form name="contact" method="POST" data-netlify="true">
+        <div>
+          <label>Nom: <input type="text" name="name" /></label>
+        </div>
+        <div>
+          <label>Adresse mail: <input type="email" name="email" /></label>
+        </div>
+        <!-- 
+        <p>
+          <label
+            >Your Role:
+            <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select></label
+          >
+        </p> -->
+        <div>
+          <label>
+            Message: <textarea name="message" rows="3" cols="25"></textarea>
+          </label>
+        </div>
+        <p>
+          <button type="submit">Envoyer</button>
+        </p>
+      </form>
+    </section>
+  </body>
+</html>

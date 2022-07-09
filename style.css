@@ -11,7 +11,7 @@ body {
 /*MENU*/
 .navBar {
   background-color: rgb(78, 205, 218);
-  padding: 10px;
+  padding: 0px;
 }
 
 .menu {
@@ -25,6 +25,14 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+/*LOGO*/
+.logo {
+  /* border: Solid 1px black; */
+  border-radius: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*DIV-ICON+TEXTE*/
@@ -161,11 +169,11 @@ a {
 
 /*SECTION*/
 
-section {
+section#accueil {
   background-image: url("Images/FondAccueilMeduim.jpg");
   position: absolute;
   width: 100%;
-  height: 75%;
+  height: 100%;
   font-family: "Allerta Stencil", sans-serif;
 
   display: flex;
@@ -177,21 +185,40 @@ section {
   font-size: 5em;
   font-family: "Allerta Stencil", sans-serif;
   color: white;
-}
 
+  background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear 2000ms;
+}
+@keyframes reveal {
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
 /*FOOTER*/
 
 footer {
-  background-color: aliceblue;
+  background-color: rgb(159, 172, 174);
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 25px;
-  height: 50px;
+  height: 35px;
+  font-size: 55%;
+  font-weight: 100;
 }
 
 .copyright {
+  padding-top: 9px;
   font-size: 1.5em;
+  font-family: "Allerta Stencil", sans-serif;
   display: flex;
   justify-content: space-around;
   align-items: center;

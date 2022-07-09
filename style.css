@@ -8,6 +8,28 @@ body {
   background-color: darkgoldenrod;
 }
 
+/*FOR MOBILE */
+/*For mobile phones: */
+[class*="col-"] {
+  /* 
+  width: 100%;
+  float: center; */
+}
+
+@media only screen and (max-width: 970px) {
+  .col-1 {
+    display: none;
+  }
+}
+
+#wrap:not(:target) {
+  transform: translate3d(-335px, 0, 0);
+}
+
+#wrap:target {
+  transform: translate3d(0, 0, 0);
+}
+
 /*MENU*/
 .navBar {
   background-color: rgb(78, 205, 218);
@@ -29,8 +51,6 @@ a {
 
 /*LOGO*/
 .logo {
-  /* border: Solid 1px black; */
-  border-radius: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
 }

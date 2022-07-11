@@ -11,23 +11,64 @@ body {
 /*FOR MOBILE */
 /*For mobile phones: */
 [class*="col-"] {
-  /* 
   width: 100%;
-  float: center; */
+  float: center;
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (min-width: 2000px) {
   .col-1 {
-    display: none;
+    font-size: 1.5em;
+  }
+  .logoF {
+    width: 50px;
+    height: 50px;
+  }
+  .logoI {
+    width: 50px;
+    height: 50px;
   }
 }
 
-#wrap:not(:target) {
-  transform: translate3d(-335px, 0, 0);
+@media only screen and (max-width: 1770px) {
+  div.name {
+    font-size: 3em;
+  }
 }
 
-#wrap:target {
-  transform: translate3d(0, 0, 0);
+@media only screen and (max-width: 1110px) {
+  div.name {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .col-1 {
+    font-size: 0.8em;
+  }
+  .logoF {
+    width: 20px;
+    height: 20px;
+  }
+  .logoI {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .col-1 {
+    font-size: 0.7em;
+  }
+  .logoF {
+    width: 15px;
+    height: 15px;
+  }
+  .logoI {
+    width: 15px;
+    height: 15px;
+  }
+  div.name {
+    font-size: 1em;
+  }
 }
 
 /*MENU*/
@@ -190,7 +231,9 @@ a {
 /*SECTION*/
 
 section#accueil {
-  background-image: url("Images/FondAccueilMeduim.jpg");
+  background-image: url("Images/FondAccueil.jpg");
+  background-size: cover;
+  background-position: center;
   position: absolute;
   width: 100%;
   height: 100%;

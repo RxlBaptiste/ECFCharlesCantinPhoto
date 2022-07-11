@@ -8,6 +8,8 @@ body {
   background-color: darkgoldenrod;
 }
 
+/*---------------------------------------------------- NAV PAGES -------------------------------------------------------------------*/
+
 /*FOR MOBILE */
 /*For mobile phones: */
 [class*="col-"] {
@@ -245,10 +247,12 @@ a {
   font-family: "Allerta Stencil", sans-serif;
 }
 
+/*---------------------------------------------------- PAGE ACCUEIL -------------------------------------------------------------------*/
+
 /*SECTION*/
 
 section#accueil {
-  background-image: url("Images/FondAccueil.jpg");
+  background-image: url("Images/1_Accueil/FondAccueil.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -305,7 +309,21 @@ footer {
   justify-content: center;
 }
 
-/*GaleriePhoto*/
+/*---------------------------------------------------- PAGE GALERIE -------------------------------------------------------------------*/
+
+/*Boutons*/
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+/*Photos*/
 .parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr) 10px repeat(2, 1fr);
@@ -327,7 +345,6 @@ footer {
   grid-area: 4 / 4 / 6 / 6;
 }
 
-.btn {
-  border: none;
-  background-color: white;
-}
+/*---------------------------------------------------- PAGE TARIF -------------------------------------------------------------------*/
+
+/*---------------------------------------------------- PAGE CONTACT -------------------------------------------------------------------*/

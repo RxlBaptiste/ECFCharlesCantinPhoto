@@ -71,6 +71,23 @@ body {
   }
 }
 
+@media only screen and (max-width: 460px) {
+  .col-1 {
+    font-size: 0.5em;
+  }
+  .logoF {
+    width: 10px;
+    height: 10px;
+  }
+  .logoI {
+    width: 10px;
+    height: 10px;
+  }
+  div.name {
+    font-size: 0.8em;
+  }
+}
+
 /*MENU*/
 .navBar {
   background-color: rgb(78, 205, 218);

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Galerie</title>
   </head>
@@ -60,111 +59,43 @@
         </div>
       </div>
     </nav>
-    <section>
-      <div class="categories">
-        <button type="button" id="tous" onclick="btn()">
-          Toutes les photos
-        </button>
-        <button type="button" id="mariage">Mariage</button>
-        <button type="button" id="grossesse">Grossesse</button>
-        <button type="button" id="bebe">Bébé</button>
-        <button type="button" id="famille">Famille</button>
-        <button type="button" id="bapteme" onclick="Ba()">Baptême</button>
-        <button type="button" id="couple">Couple</button>
+    <section id="Galerie">
+      <h1 id="font">- GALERIE -</h1>
+      <ul>
+        <li class="active">Toutes les photos</li>
+        <li>Mariage</li>
+        <li>Grossesse</li>
+        <li>Bébé</li>
+        <li>Famille</li>
+        <li>Baptême</li>
+        <li>Couple</li>
+        <li>Portrait</li>
+      </ul>
+
+      <div class="product">
+        <img src="Images/2_Galerie/Mariages/M-1.jpg" data-filter="mariage" />
+        <img src="Images/2_Galerie/Mariages/M-2.jpg" data-filter="mariage" />
+        <img src="Images/2_Galerie/Grossesse/G-1.jpg" data-filter="grossesse" />
+        <img src="Images/2_Galerie/Grossesse/G-2.jpg" data-filter="grossesse" />
+        <img src="Images/2_Galerie/Bebe/Be-1.jpg" data-filter="bébé" />
+        <img src="Images/2_Galerie/Bebe/Be-2.jpg" data-filter="bébé" />
+        <img src="Images/2_Galerie/Famille/F-1.jpg" data-filter="famille" />
+        <img src="Images/2_Galerie/Famille/F-2.jpg" data-filter="famille" />
+        <img src="Images/2_Galerie/Baptême/Ba-1.jpg" data-filter="baptême" />
+        <img src="Images/2_Galerie/Baptême/Ba-2.jpg" data-filter="baptême" />
+        <img src="Images/2_Galerie/Couple/C-1.jpg" data-filter="couple" />
+        <img src="Images/2_Galerie/Couple/C-2.jpg" data-filter="couple" />
+        <img src="Images/2_Galerie/Portrait/P-1.jpg" data-filter="portrait" />
+        <img src="Images/2_Galerie/Portrait/P-2.jpg" data-filter="portrait" />
       </div>
-      <article>
-        <ul>
-          <li class="bapteme">
-            <img
-              src="Images/2_Galerie/Baptême/Ba-1.jpg"
-              alt="Bébé se fait baptiser"
-            />
-          </li>
-          <li class="bapteme">
-            <img
-              src="Images/2_Galerie/Baptême/Ba-2.jpg"
-              alt="Bébé se fait baptiser"
-            />
-          </li>
-          <li class="bebe">
-            <img
-              src="Images/2_Galerie/Bebe/Be-1.jpg"
-              alt="Portrait d'un bébé"
-            />
-          </li>
-          <li class="bebe">
-            <img
-              src="Images/2_Galerie/Bebe/Be-2.jpg"
-              alt="Bébé entrait de bâiller"
-            />
-          </li>
-          <li class="couple">
-            <img
-              src="Images/2_Galerie/Couple/C-1.jpg"
-              alt="Couple dans un champs de blé"
-            />
-          </li>
-          <li class="couple">
-            <img
-              src="Images/2_Galerie/Couple/C-2.jpg"
-              alt="Couple assis au pied d'un arbre"
-            />
-          </li>
-          <li class="famille">
-            <img
-              src="Images/2_Galerie/Famille/F-1.jpg"
-              alt="Famille sur un ponton"
-            />
-          </li>
-          <li class="famille">
-            <img
-              src="Images/2_Galerie/Famille/F-2.jpg"
-              alt="Photo d'enfant classe du plus petit au plus grand"
-            />
-          </li>
-          <li class="grossesse">
-            <img
-              src="Images/2_Galerie/Grossesse/G-1.jpg"
-              alt="Femme enceinte avec des petit chaussons"
-            />
-          </li>
-          <li class="grossesse">
-            <img
-              src="Images/2_Galerie/Grossesse/G-2.jpg"
-              alt="photo en noir et blanc d'une femme enceinte"
-            />
-          </li>
-          <li class="mariage">
-            <img
-              src="Images/2_Galerie/Mariages/M-1.jpg"
-              alt="Photo en noir et blanc de jeune marié sur les rempats d'un chateau"
-            />
-          </li>
-          <li class="mariage">
-            <img
-              src="Images/2_Galerie/Mariages/M-2.jpg"
-              alt="Photo proche des mains de deux mariées avec leur alliance "
-            />
-          </li>
-          <li class="portrait">
-            <img
-              src="Images/2_Galerie/Portrait/P-1.jpg"
-              alt="Portrait d'une jeune femme"
-            />
-          </li>
-          <li class="portrait">
-            <img
-              src="Images/2_Galerie/Portrait/P-2.jpg"
-              alt="Portrait d'un jeune homme"
-            />
-          </li>
-        </ul>
-      </article>
     </section>
+
     <footer>
       <div class="copyright">
         Copyright © 2022 - Charles Cantin - Tous droits réservés
       </div>
     </footer>
+
+    <script src="Filter.js"></script>
   </body>
 </html>

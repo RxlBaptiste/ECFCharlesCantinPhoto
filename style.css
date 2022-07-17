@@ -390,6 +390,34 @@ body#Tarif {
   overflow-y: hidden;
 }
 
+@media only screen and (min-width: 1200px) {
+  #containerCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 24.2em);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  #card1 {
+    grid-area: 1/1/2/2;
+  }
+  #card2 {
+    grid-area: 1/2/2/3;
+  }
+  #card3 {
+    grid-area: 2/1/3/2;
+  }
+  #card4 {
+    grid-area: 2/2/3/3;
+  }
+  #card5 {
+    grid-area: 3/1/4/2;
+  }
+  #card6 {
+    grid-area: 3/2/4/3;
+  }
+}
+
 #containerCards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -480,54 +508,54 @@ body#Tarif {
 
 #card1 {
   grid-area: 1/1/2/2;
-  position: relative;
-  width: 50%;
-  height: 50%;
+  position: relative; /* 
+  width: 100%;
+  height: 100%; */
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 #card2 {
   grid-area: 1/2/2/3;
-  position: relative;
+  position: relative; /* 
   width: 50%;
-  height: 50%;
+  height: 50%; */
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 #card3 {
   grid-area: 1/3/2/4;
-  position: relative;
+  position: relative; /* 
   width: 50%;
-  height: 50%;
+  height: 50%; */
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 #card4 {
   grid-area: 2/1/3/2;
-  position: relative;
+  position: relative; /* 
   width: 50%;
-  height: 50%;
+  height: 50%; */
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 #card5 {
   grid-area: 2/2/3/3;
-  position: relative;
+  position: relative; /* 
   width: 50%;
-  height: 50%;
+  height: 50%; */
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
 #card6 {
   grid-area: 2/3/3/4;
-  position: relative;
+  position: relative; /* 
   width: 50%;
-  height: 50%;
+  height: 50%; */
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;

@@ -387,45 +387,11 @@ ul li.active {
 
 body#Tarif {
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: visible;
 }
-/* 
-@media only screen and (max-width: 700px) {
-  body#Tarif {
-    overflow-y: visible;
-    overflow-x: hidden;
-  }
-  #card1 {
-    position: relative;
-    left: 50px;
-  }
-  #card2 {
-    position: relative;
-    left: 150px;
-  }
-  #card3 {
-    position: relative;
-    top: 387px;
-    right: 355px;
-  }
-  #card4 {
-    position: relative;
-    left: 352px;
-  }
-  #card5 {
-    position: relative;
-    top: 374px;
-    right: 160px;
-  }
-  #card6 {
-    position: relative;
-    top: 374px;
-    right: 50px;
-  }
-} */
 @media only screen and (min-width: 640px) {
   body#Tarif {
-    overflow-y: visible;
+    overflow-y: hidden;
     overflow-x: hidden;
   }
   #containerCards {
@@ -434,6 +400,9 @@ body#Tarif {
     grid-template-rows: repeat(2, 24.2em) !important;
     grid-column-gap: 0px !important;
     grid-row-gap: 0px !important;
+
+    position: relative;
+    bottom: 50px;
   }
 
   #card1 {
@@ -488,7 +457,7 @@ body#Tarif {
   grid-row-gap: 150px;
 
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
 
   align-items: center;
   justify-items: center;

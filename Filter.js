@@ -15,7 +15,7 @@ liItem.forEach((li) => {
       img.style.display = "none";
       if (
         img.getAttribute("data-filter") == value.toLowerCase() ||
-        value == "Toutes les photos"
+        value == "Tous"
       ) {
         img.style.display = "block";
       }

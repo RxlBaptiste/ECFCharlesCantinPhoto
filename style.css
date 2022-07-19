@@ -47,6 +47,10 @@ body {
   }
 }
 @media only screen and (max-width: 970px) {
+  body#Accueil {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .col-1 {
     font-size: 0.8em;
   }
@@ -61,6 +65,10 @@ body {
 }
 
 @media only screen and (max-width: 660px) {
+  body#Accueil {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .col-1 {
     font-size: 0.7em;
   }
@@ -78,6 +86,10 @@ body {
 }
 
 @media only screen and (max-width: 460px) {
+  body#Accueil {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .col-1 {
     font-size: 0.58em;
   }
@@ -317,6 +329,50 @@ footer {
 body {
   background-color: #667d8e;
   font-family: "Allerta Stencil", sans-serif;
+}
+
+@media only screen and (max-width: 1280px) {
+  #Categories {
+    font-size: 0.85em;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #Categories {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  #Categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: none;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  #Categories {
+    font-size: 0.35em;
+    position: relative;
+    right: 20px;
+  }
+  h1#font {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  #Categories {
+    display: block;
+    text-align: center;
+    text-justify: center;
+    font-size: 1em;
+  }
+  h1#font {
+    font-size: 2em;
+  }
 }
 
 section#Galerie {

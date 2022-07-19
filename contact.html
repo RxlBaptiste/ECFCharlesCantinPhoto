@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Contact</title>
   </head>
-  <body>
+  <body id="Contact">
     <nav class="navBar">
       <div class="col-1 menu">
         <img
@@ -60,31 +60,35 @@
       </div>
     </nav>
     <section>
-      <form name="contact" method="POST" data-netlify="true">
-        <div>
-          <label>Nom: <input type="text" name="name" /></label>
+      <form id="form" name="contact" method="POST" data-netlify="true">
+        <div id="formBtn">
+          <div id="formInput">
+            <div>
+              <label class="TitleInput"
+                >Nom :&nbsp; <input class="Input" type="text" name="name"
+              /></label>
+            </div>
+            <br />
+            <div>
+              <label class="TitleInput"
+                >Adresse mail :&nbsp;
+                <input class="Input" type="email" name="email"
+              /></label>
+            </div>
+            <br />
+            <div>
+              <label class="TitleInput">
+                <div id="message">
+                  Message :&nbsp;
+                  <textarea name="message" rows="3" cols="25"></textarea>
+                </div>
+              </label>
+            </div>
+          </div>
+          <p>
+            <button id="submit" type="submit">Envoyer</button>
+          </p>
         </div>
-        <div>
-          <label>Adresse mail: <input type="email" name="email" /></label>
-        </div>
-        <!-- 
-        <p>
-          <label
-            >Your Role:
-            <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select></label
-          >
-        </p> -->
-        <div>
-          <label>
-            Message: <textarea name="message" rows="3" cols="25"></textarea>
-          </label>
-        </div>
-        <p>
-          <button type="submit">Envoyer</button>
-        </p>
       </form>
     </section>
     <footer>

@@ -642,3 +642,79 @@ body#Tarif {
 }
 
 /*---------------------------------------------------- PAGE CONTACT -------------------------------------------------------------------*/
+
+@media only screen and (max-width: 500px) {
+  #formBtn {
+    color: red;
+    font-size: 0.5em;
+  }
+  .Input {
+    height: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #formBtn {
+    color: pink;
+    font-size: 0.3em;
+  }
+  .Input {
+    height: 12px !important;
+  }
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 2em;
+  padding: 15px;
+}
+
+#formBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 5em;
+  padding: 15px;
+  border: 1px solid black;
+  background-color: rgb(78, 205, 218);
+  border-radius: 1em;
+}
+
+#formInput {
+  display: flex;
+  flex-direction: column;
+}
+.Input {
+  height: 30px;
+  font-family: "Allerta Stencil", sans-serif;
+}
+.TitleInput {
+  display: flex;
+  align-items: center;
+}
+
+#message {
+  display: flex;
+  align-items: center;
+}
+#submit {
+  font-size: 0.8em;
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 100;
+
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 4px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+#submit:hover {
+  font-weight: 900;
+  font-family: "Allerta Stencil", sans-serif;
+  text-decoration: underline;
+}

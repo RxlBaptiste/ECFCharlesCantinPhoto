@@ -3,6 +3,7 @@
 body#Accueil {
   overflow-y: hidden;
   overflow-x: hidden;
+  background-color: black;
 }
 
 body {

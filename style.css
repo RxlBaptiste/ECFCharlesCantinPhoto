@@ -1,16 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
 
-body#Accueil {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-color: black;
-}
-
 body {
   margin: 0px;
   overflow-x: hidden;
 
-  background-color: darkgoldenrod;
+  background-color: transparent;
 }
 
 /*---------------------------------------------------- NAV PAGES -------------------------------------------------------------------*/
@@ -109,8 +103,11 @@ body {
 
 /*MENU*/
 .navBar {
-  background-color: rgb(78, 205, 218);
-  padding: 0px;
+  background-color: #667d8e;
+}
+
+#navBar-Accueil {
+  background-color: #01090c;
 }
 
 .menu {
@@ -122,14 +119,15 @@ body {
 }
 
 a {
+  color: #4ecdda;
   text-decoration: none;
-  color: black;
 }
 
 /*LOGO*/
 .logo {
+  height: 100px;
+  width: 100px;
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 /*DIV-ICON+TEXTE*/
@@ -147,7 +145,7 @@ a {
 }
 
 /*HOVER-EFFECT-TEXT-RESEAUX*/
-
+/* 
 .Txt-Reseaux:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -168,16 +166,16 @@ a {
   position: relative;
   font-size: 1em;
   font-family: "Allerta Stencil", sans-serif;
-}
+} */
 
 /*HOVER-EFFECT*/
 
 /*ACCUEIL*/
-#accueil:hover::before {
+#Nav-accueil:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-#accueil::before {
+#Nav-accueil::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -185,22 +183,23 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: black;
+  background: #4ecdda;
   transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
-#accueil {
+#Nav-accueil {
   position: relative;
-  font-size: 1.5em;
+  font-size: 1.5em; /* 
+  background-color: #4ecdda;*/
   font-family: "Allerta Stencil", sans-serif;
 }
 
 /*GALERIE*/
-#galerie:hover::before {
+#Nav-galerie:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-#galerie::before {
+#Nav-galerie::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -208,22 +207,22 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: black;
+  background: #4ecdda;
   transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
-#galerie {
+#Nav-galerie {
   position: relative;
   font-size: 1.5em;
   font-family: "Allerta Stencil", sans-serif;
 }
 
 /*TARIF*/
-#tarif:hover::before {
+#Nav-tarif:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-#tarif::before {
+#Nav-tarif::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -231,22 +230,22 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: black;
+  background: #4ecdda;
   transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
-#tarif {
+#Nav-tarif {
   position: relative;
   font-size: 1.5em;
   font-family: "Allerta Stencil", sans-serif;
 }
 
 /*CONTACT*/
-#contact:hover::before {
+#Nav-contact:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-#contact::before {
+#Nav-contact::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -254,24 +253,37 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: black;
+  background: #4ecdda;
   transform-origin: bottom right;
   transition: transform 0.3s ease;
 }
-#contact {
+#Nav-contact {
   position: relative;
   font-size: 1.5em;
   font-family: "Allerta Stencil", sans-serif;
 }
 
+footer {
+  background-color: rgb(159, 172, 174);
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  font-size: 55%;
+  font-weight: 100;
+}
 /*---------------------------------------------------- PAGE ACCUEIL -------------------------------------------------------------------*/
 
+body#Accueil {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 /*SECTION*/
 
 section#accueil {
   background-image: url("Images/1_Accueil/FondAccueil.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: 75%;
+  background-position: top;
+
   position: absolute;
   width: 100%;
   height: 100%;
@@ -286,6 +298,9 @@ section#accueil {
   font-size: 5em;
   font-family: "Allerta Stencil", sans-serif;
   color: white;
+
+  position: absolute;
+  top: 280px;
 
   background: 50% 100% / 50% 50% no-repeat
     radial-gradient(ellipse at bottom, #fff, transparent, transparent);
@@ -306,9 +321,9 @@ section#accueil {
 }
 /*FOOTER*/
 
-footer {
-  background-color: rgb(159, 172, 174);
+footer#accueil {
   position: fixed;
+  background-color: rgb(159, 172, 174);
   bottom: 0;
   width: 100%;
   height: 35px;
@@ -327,7 +342,7 @@ footer {
 }
 
 /*---------------------------------------------------- PAGE GALERIE -------------------------------------------------------------------*/
-body {
+body#All {
   background-color: #667d8e;
   font-family: "Allerta Stencil", sans-serif;
 }
@@ -392,10 +407,10 @@ section#Galerie {
   width: 85%;
   margin: 50px auto;
 }
-#font {
+.font {
   text-align: center;
-  letter-spacing: 1px;
-  color: rgb(33, 33, 38);
+  letter-spacing: 2px;
+  color: black;
   font-size: 3em;
   font-family: "Allerta Stencil", sans-serif;
 }
@@ -413,10 +428,16 @@ ul {
 ul li {
   list-style: none;
   background-color: rgb(204, 204, 204);
-  padding: 5px 10px; /* 
-  margin: 0 10px; */
+  padding: 5px 10px;
   cursor: pointer;
   font-size: 1.2em;
+
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+ul li:hover {
+  background-color: rgb(78 205 218);
 }
 
 ul li.active {
@@ -457,6 +478,11 @@ ul li.active {
 body#Tarif {
   overflow-x: hidden;
   overflow-y: visible;
+}
+
+.lign {
+  margin: 0px 150px;
+  border-bottom: 2px solid rgb(204, 204, 204);
 }
 @media only screen and (min-width: 640px) {
   body#Tarif {
@@ -674,58 +700,131 @@ body#Tarif {
   }
 }
 
-#form {
+#Section-contact {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
 
-  font-size: 2em;
-  padding: 15px;
+  position: relative;
+  top: 150px;
 }
 
-#formBtn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/*COORDONNÉE CHARLES*/
 
-  margin-top: 5em;
-  padding: 15px;
+#Fond {
+  background-color: whitesmoke;
   border: 1px solid black;
-  background-color: rgb(78, 205, 218);
-  border-radius: 1em;
+  border-radius: 20px;
+
+  padding: 50px;
 }
 
-#formInput {
+#Fond2 {
   display: flex;
   flex-direction: column;
-}
-.Input {
-  height: 30px;
-  font-family: "Allerta Stencil", sans-serif;
-}
-.TitleInput {
-  display: flex;
+
   align-items: center;
+
+  background-color: #bcc2c6;
+  border: 1px solid black;
+  border-radius: 20px;
+
+  padding: 25px;
 }
 
-#message {
+#charlesName {
+  font-size: 1.5em;
+}
+#charlesTel {
+  font-size: 1.2em;
+}
+#charlesCity {
+  font-size: 1.2em;
+}
+#charlesMail {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/*FORMULAIRE*/
+
+#form {
+  height: 360px;
+  width: 400px;
+
+  background-color: whitesmoke;
+  padding: 30px;
+  margin: 20px;
+
+  margin-right: 50px;
+  padding-right: 50px;
+
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.Input {
+  height: 25px;
+  margin: 8px;
+
+  border: 1px solid black;
+  border-radius: 8px;
+
+  background-color: #bcc2c6;
+  font-family: "Allerta Stencil", sans-serif;
+}
+
+.Input::placeholder {
+  color: black;
+}
+
+.Input:focus {
+  background-color: rgb(78, 205, 218);
+}
+
+#NameFirstname {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#mail {
+  width: 100%;
+}
+
+#Inputmessage {
+  width: 100%;
+  height: 200px;
+}
+
+p#submit {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-#submit {
-  font-size: 0.8em;
+button#submit {
   font-family: "Allerta Stencil", sans-serif;
-  font-weight: 100;
+  padding: 10px 35px;
 
   border-radius: 20px;
-  padding: 5px 15px;
-  margin: 4px;
-  border: 1px solid black;
-  background-color: white;
+  border: none;
+  background-color: #9fabb3;
 }
 
-#submit:hover {
+button#submit:hover {
   font-weight: 900;
   font-family: "Allerta Stencil", sans-serif;
-  text-decoration: underline;
+
+  background-color: #4ecdda;
+}
+
+footer#contact {
+  position: fixed;
+  background-color: rgb(159, 172, 174);
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  font-size: 55%;
+  font-weight: 100;
 }

@@ -7,91 +7,119 @@
     <link rel="stylesheet" href="style.css" />
     <title>Contact</title>
   </head>
-  <body id="Contact">
+  <body id="All">
     <nav class="navBar">
       <div class="col-1 menu">
-        <img
-          class="logo"
-          width="8%"
-          height="8%"
-          src="Images//NavBar/Logo.PNG"
-        />
-        <div id="accueil">
-          <a class="col-1" href="index.html">ACCUEIL</a>
+        <img class="logo" src="Images//NavBar/Logo.png" />
+        <div id="Nav-accueil">
+          <a id="BtnAccueil" class="col-1" href="index.html">ACCUEIL</a>
         </div>
-        <div id="galerie">
-          <a class="col-1" href="galerie.html">GALERIE</a>
+        <div id="Nav-galerie">
+          <a id="BtnGalerie" class="col-1" href="galerie.html">GALERIE</a>
         </div>
-        <div id="tarif">
-          <a class="col-1" href="tarif.html">TARIF & PRESTATION</a>
+        <div id="Nav-tarif">
+          <a id="BtnTarif" class="col-1" href="tarif.html"
+            >TARIF & PRESTATION</a
+          >
         </div>
-        <div id="contact">
-          <a class="col-1" href="contact.html">CONTACT</a>
+        <div id="Nav-contact">
+          <a id="BtnContact" class="col-1" href="contact.html">CONTACT</a>
         </div>
-        <div class="IconReseaux">
+        <div class="Nav-IconReseaux">
           <div class="col-1 ContainerIcon">
-            <img
-              class="logoF"
-              width="30px"
-              height="30px"
-              src="Images//NavBar/LogoFacebook.png"
-            />&nbsp;
+            <a
+              class="col-1 Txt-Reseaux"
+              target="blank"
+              href="https://www.facebook.com/"
+              ><img
+                class="logoF"
+                width="30px"
+                height="30px"
+                src="Images//NavBar/LogoFacebook.png" /></a
+            >&nbsp;<!-- 
             <div>
-              <a class="col-1 Txt-Reseaux" href="https://www.facebook.com/"
-                >FACEBOOK</a
-              >
-            </div>
+               
+            </div> -->
           </div>
           <br />
           <div class="ContainerIcon">
-            <img
-              class="logoI"
-              width="30px"
-              height="30px"
-              src="Images//NavBar/LogoIntagram.png"
-            />&nbsp;
-            <div>
-              <a class="col-1 Txt-Reseaux" href="https://www.instagram.com/"
-                >INSTAGRAM</a
-              >
-            </div>
+            <a
+              class="col-1 Txt-Reseaux"
+              target="blank"
+              href="https://www.instagram.com/"
+              ><img
+                class="logoI"
+                width="30px"
+                height="30px"
+                src="Images//NavBar/LogoIntagram.png" /></a
+            >&nbsp;
           </div>
         </div>
       </div>
     </nav>
     <section>
-      <form id="form" name="contact" method="POST" data-netlify="true">
-        <div id="formBtn">
+      <h1 class="font">- CONTACT -</h1>
+      <div class="lign"></div>
+      <div id="Section-contact">
+        <div id="Fond">
+          <div id="Fond2">
+            <p id="charlesName">CHARLES CANTIN</p>
+            <p id="charlesTel">Tel : 06 01 02 03 04</p>
+            <p id="charlesCity">RENNES 35000</p>
+            <p id="charlesMail">
+              Adresse mail : <br />
+              charlescantin@contact.com
+            </p>
+          </div>
+        </div>
+        <form id="form" name="contact" method="POST" data-netlify="true">
           <div id="formInput">
-            <div>
-              <label class="TitleInput"
-                >Nom :&nbsp; <input class="Input" type="text" name="name"
-              /></label>
+            <div id="NameFirstname">
+              <div id="Name">
+                <input
+                  placeholder="Nom"
+                  class="Input"
+                  type="text"
+                  name="name"
+                />
+              </div>
+              &nbsp;
+              <div id="Firstname">
+                <input
+                  placeholder="Prénom"
+                  class="Input"
+                  type="text"
+                  name="name"
+                />
+              </div>
             </div>
-            <br />
             <div>
-              <label class="TitleInput"
-                >Adresse mail :&nbsp;
-                <input class="Input" type="email" name="email"
-              /></label>
+              <input
+                id="mail"
+                placeholder="Adresse mail"
+                class="Input"
+                type="email"
+                name="email"
+              />
             </div>
-            <br />
-            <div>
-              <label class="TitleInput">
-                <div id="message">
-                  Message :&nbsp;
-                  <textarea name="message" rows="3" cols="25"></textarea>
-                </div>
-              </label>
+            <div id="message">
+              <textarea
+                id="Inputmessage"
+                class="Input"
+                placeholder="Message"
+                name="message"
+                rows="3"
+                cols="25"
+              ></textarea>
             </div>
           </div>
-          <p>
+          <p id="submit">
             <button id="submit" type="submit">Envoyer</button>
           </p>
-        </div>
-      </form>
+        </form>
+      </div>
     </section>
-    <footer>
+    <footer id="contact">
       <div class="copyright">
         Copyright © 2022 - Charles Cantin - Tous droits réservés
       </div>

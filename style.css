@@ -443,15 +443,23 @@ body#All {
 
 @media only screen and (max-width: 670px) {
   #Categories {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* 
+    text-align: center; */
+
     font-size: 1em;
   }
   h1.font {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 2.5em;
   }
   ul li {
-    margin: 10px;
+    /* 
+    margin: 10px; */
+    width: 90%;
+    text-align: center;
   }
 }
 
@@ -460,6 +468,8 @@ body#All {
     display: block;
     text-align: center;
     font-size: 1em;
+
+    padding-left: 0 !important;
   }
   h1.font {
     font-size: 2em;

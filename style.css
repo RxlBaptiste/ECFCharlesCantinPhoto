@@ -17,6 +17,12 @@ body {
 }
 
 @media only screen and (min-width: 2000px) {
+  section#accueil {
+    background-image: url("Images/1_Accueil/FondAccueil.jpg");
+    background-size: 40% !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
   .col-1 {
     font-size: 1.5em;
   }
@@ -28,17 +34,40 @@ body {
     width: 50px;
     height: 50px;
   }
+  .logo {
+    width: 120px !important;
+    height: 120px !important;
+  }
 }
 
 @media only screen and (max-width: 1770px) {
   div.name {
     font-size: 3em;
   }
+
+  body#Accueil {
+    background-color: #020c0e;
+  }
+  section#accueil {
+    background-image: url("Images/1_Accueil/FondAccueil.jpg");
+    background-size: 90% !important;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 }
 
 @media only screen and (max-width: 1110px) {
   div.name {
-    font-size: 1.5em;
+    font-size: 2.5em !important;
+  }
+  body#Accueil {
+    background-color: #020c0e;
+  }
+  section#accueil {
+    background-image: url("Images/1_Accueil/FondAccueil.jpg");
+    background-size: 128% !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
 @media only screen and (max-width: 970px) {
@@ -49,6 +78,10 @@ body {
   .col-1 {
     font-size: 0.8em;
   }
+  div.name {
+    position: absolute;
+    font-size: 2em !important;
+  }
   .logoF {
     width: 20px;
     height: 20px;
@@ -57,12 +90,31 @@ body {
     width: 20px;
     height: 20px;
   }
+  .logo {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  body#Accueil {
+    background-color: #020c0e;
+  }
+  section#accueil {
+    background-image: url("Images/1_Accueil/FondAccueil.jpg");
+    background-size: 145% !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 
 @media only screen and (max-width: 660px) {
   body#Accueil {
     overflow-x: hidden;
     overflow-y: hidden;
+  }
+  section#accueil {
+    background-image: url("Images/1_Accueil/FondAccueil.jpg");
+    background-size: 190% !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
   .col-1 {
     font-size: 0.7em;
@@ -75,8 +127,12 @@ body {
     width: 15px;
     height: 15px;
   }
+  .logo {
+    width: 60px !important;
+    height: 60px !important;
+  }
   div.name {
-    font-size: 1em;
+    font-size: 1.8em !important;
   }
 }
 
@@ -84,6 +140,12 @@ body {
   body#Accueil {
     overflow-x: hidden;
     overflow-y: hidden;
+  }
+  section#accueil {
+    background-image: url("Images/1_Accueil/FondAccueil.jpg");
+    background-size: 200% !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
   .col-1 {
     font-size: 0.58em;
@@ -96,8 +158,12 @@ body {
     width: 10px;
     height: 10px;
   }
+  .logo {
+    width: 40px !important;
+    height: 40px !important;
+  }
   div.name {
-    font-size: 0.8em;
+    font-size: 1.1em !important;
   }
 }
 
@@ -276,12 +342,15 @@ footer {
 body#Accueil {
   overflow-y: hidden;
   overflow-x: hidden;
+
+  background-color: #020c0e;
 }
 /*SECTION*/
 
 section#accueil {
   background-image: url("Images/1_Accueil/FondAccueil.jpg");
   background-size: 75%;
+  background-repeat: no-repeat;
   background-position: top;
 
   position: absolute;
@@ -374,11 +443,11 @@ body#All {
 
 @media only screen and (max-width: 670px) {
   #Categories {
-    font-size: 0.35em;
-    position: relative;
-    right: 20px;
+    display: block;
+    text-align: center;
+    font-size: 1em;
   }
-  h1#font {
+  h1.font {
     font-size: 2.5em;
   }
   ul li {
@@ -392,7 +461,7 @@ body#All {
     text-align: center;
     font-size: 1em;
   }
-  h1#font {
+  h1.font {
     font-size: 2em;
   }
   ul li {
@@ -400,6 +469,12 @@ body#All {
     width: auto;
     text-align: center;
     border: 1px solid grey;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  h1.font {
+    font-size: 2em !important;
   }
 }
 
@@ -543,6 +618,11 @@ body#Tarif {
     transform-style: preserve-3d;
   }
 }
+@media only screen and (max-width: 430px) {
+  h1.font {
+    font-size: 1.3em !important;
+  }
+}
 
 #containerCards {
   display: grid;
@@ -682,21 +762,85 @@ body#Tarif {
 
 /*---------------------------------------------------- PAGE CONTACT -------------------------------------------------------------------*/
 
-@media only screen and (max-width: 500px) {
-  #formBtn {
-    font-size: 0.5em;
+@media only screen and (max-width: 1040px) {
+  #Section-contact {
+    display: flex;
+    flex-direction: column;
+
+    position: relative !important;
+    top: 10px !important;
   }
-  .Input {
-    height: 20px !important;
+  #form {
+    display: flex;
+    flex-direction: column;
+
+    width: 49% !important;
+  }
+  #formInput {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer#contact {
+    position: relative !important;
   }
 }
 
-@media only screen and (max-width: 380px) {
-  #formBtn {
-    font-size: 0.3em;
+@media only screen and (max-width: 840px) {
+  #form {
+    width: 40%;
   }
-  .Input {
-    height: 12px !important;
+}
+@media only screen and (max-width: 610px) {
+  #Fond {
+    padding: 2em !important;
+    margin: 2em !important;
+  }
+
+  #charlesName {
+    font-size: 1.2em !important;
+  }
+  #charlesTel {
+    font-size: 1em !important;
+  }
+  #charlesCity {
+    font-size: 1em !important;
+  }
+  #charlesMail {
+    font-size: 1em !important;
+  }
+}
+@media only screen and (max-width: 510px) {
+  #charlesName {
+    font-size: 0.9em !important;
+  }
+  #charlesTel {
+    font-size: 0.7em !important;
+  }
+  #charlesCity {
+    font-size: 0.7em !important;
+  }
+  #charlesMail {
+    font-size: 0.7em !important;
+  }
+}
+@media only screen and (max-width: 495px) {
+  footer#contact {
+    position: fixed !important;
+  }
+}
+@media only screen and (max-width: 410px) {
+  #charlesName {
+    font-size: 0.7em !important;
+  }
+  #charlesTel {
+    font-size: 0.5em !important;
+  }
+  #charlesCity {
+    font-size: 0.5em !important;
+  }
+  #charlesMail {
+    font-size: 0.5em !important;
   }
 }
 
@@ -704,10 +848,10 @@ body#Tarif {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 
   position: relative;
-  top: 150px;
+  top: 80px;
 }
 
 /*COORDONNÉE CHARLES*/
@@ -718,6 +862,9 @@ body#Tarif {
   border-radius: 20px;
 
   padding: 50px;
+
+  height: 45%;
+  width: 45%;
 }
 
 #Fond2 {
@@ -750,21 +897,18 @@ body#Tarif {
 /*FORMULAIRE*/
 
 #form {
-  height: 360px;
-  width: 400px;
+  height: 45%;
+  width: 45%;
 
   background-color: whitesmoke;
   padding: 30px;
-  margin: 20px;
-
-  margin-right: 50px;
-  padding-right: 50px;
 
   border: 1px solid black;
   border-radius: 20px;
 }
 
 .Input {
+  display: block;
   height: 25px;
   margin: 8px;
 
@@ -783,9 +927,10 @@ body#Tarif {
   background-color: rgb(78, 205, 218);
 }
 
-#NameFirstname {
-  display: flex;
-  justify-content: space-between;
+#name {
+  width: 100%;
+}
+#firstname {
   width: 100%;
 }
 

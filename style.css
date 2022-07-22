@@ -482,9 +482,12 @@ body#All {
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 390px) {
   h1.font {
     font-size: 2em !important;
+  }
+  footer#accueil {
+    font-size: 0.4em !important;
   }
 }
 

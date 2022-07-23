@@ -630,6 +630,13 @@ body#Tarif {
     transition: transform 0.5s;
     transform-style: preserve-3d;
   }
+  .Description {
+    font-size: 0.8em !important;
+  }
+  #supplement {
+    font-size: 0.5em !important;
+    top: 45px;
+  }
 }
 @media only screen and (max-width: 430px) {
   h1.font {
@@ -670,13 +677,13 @@ body#Tarif {
   position: relative;
   bottom: -2em;
 
-  font-size: 1.1em;
+  font-size: 0.8em;
 }
 
 #supplement {
   position: relative;
-  bottom: -3.8em;
-  font-size: 0.7em;
+  bottom: -6em;
+  font-size: 0.5em !important;
 }
 
 .Price {
@@ -708,28 +715,35 @@ body#Tarif {
   transform: rotateY(180deg);
 }
 
-.CardFront,
-.CardBack {
+.CardFront {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   border-radius: 15px;
 }
-
-.CardFront {
-  background-color: rgb(200, 200, 200);
-  color: #111111;
-}
-
 .CardBack {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
   background-color: rgb(78, 205, 218);
   color: black;
-  height: 220px;
+  height: 250px;
+  margin-bottom: 50px !important;
 
   transform: rotateY(180deg);
 }
 
+.CardFront {
+  background-color: rgb(200, 200, 200);
+  color: #111111;
+  border: 1px solid transparent;
+}
+/* 
+.CardBack {
+}
+ */
 #card1 {
   grid-area: 1 / 1 / 2 / 2;
   position: relative;

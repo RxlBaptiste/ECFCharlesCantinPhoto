@@ -392,8 +392,8 @@ section#accueil {
 
 footer#accueil {
   position: fixed;
-  background-color: rgb(159, 172, 174);
-  bottom: 0;
+  background-color: rgb(159, 172, 174); /* 
+  bottom: 0; */
   width: 100%;
   height: 35px;
   font-size: 55%;

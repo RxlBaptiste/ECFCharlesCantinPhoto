@@ -738,7 +738,9 @@ body#Tarif {
 .CardFront {
   background-color: rgb(200, 200, 200);
   color: #111111;
-  border: 1px solid transparent;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 /* 
 .CardBack {
